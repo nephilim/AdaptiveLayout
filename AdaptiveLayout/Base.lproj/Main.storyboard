@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,17 +23,38 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSL-vy-j4R" userLabel="TextContainer">
                                 <rect key="frame" x="16" y="237" width="568" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flr-9k-VoS">
+                                        <rect key="frame" x="-23" y="10" width="614" height="177"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOJ-bj-LHH">
+                                        <rect key="frame" x="57" y="58" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="flr-9k-VoS" secondAttribute="centerX" id="C3N-Ak-qy8"/>
+                                    <constraint firstItem="flr-9k-VoS" firstAttribute="top" secondItem="aSL-vy-j4R" secondAttribute="top" constant="10" id="Ub0-Jl-4a9"/>
+                                    <constraint firstAttribute="bottom" secondItem="fOJ-bj-LHH" secondAttribute="bottom" constant="10" id="Xlv-Nf-JJu"/>
+                                    <constraint firstAttribute="centerX" secondItem="fOJ-bj-LHH" secondAttribute="centerX" id="s5S-ld-kHp"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aSL-vy-j4R" secondAttribute="bottom" id="AZA-MP-8kh"/>
+                            <constraint firstItem="lLh-H3-2K7" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Akh-Xy-xQR"/>
                             <constraint firstItem="aSL-vy-j4R" firstAttribute="top" secondItem="lLh-H3-2K7" secondAttribute="bottom" constant="20" id="Rgu-Fy-l00"/>
+                            <constraint firstItem="aSL-vy-j4R" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Rv7-2c-SIj"/>
                             <constraint firstItem="lLh-H3-2K7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SXU-lB-LUR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="aSL-vy-j4R" secondAttribute="trailing" id="TDZ-8G-D12"/>
                             <constraint firstAttribute="centerX" secondItem="lLh-H3-2K7" secondAttribute="centerX" id="Vni-Sf-gwz"/>
-                            <constraint firstItem="aSL-vy-j4R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bhg-Oh-Byr"/>
+                            <constraint firstItem="aSL-vy-j4R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="a59-Bi-20o"/>
                         </constraints>
                     </view>
                 </viewController>
